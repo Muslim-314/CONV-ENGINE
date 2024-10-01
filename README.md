@@ -17,8 +17,7 @@ The repository contains the RTL design for an advanced in-memory computing unit 
 
 
 ## Memory Vector
-<!-- Explain the structure and functionality of the memory array. -->
-
+![Alt Text](./Schemetics/Memory_Vector.png)
 ## Memory Geometry
 <!-- Outline the memory geometry, including details about cache slices, sub-arrays, and bitlines. -->
 
