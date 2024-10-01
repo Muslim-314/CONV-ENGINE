@@ -17,7 +17,7 @@ The repository contains the RTL design for an advanced in-memory computing unit 
 ## Memory Vector
 ![Alt Text](./Schemetics/Memory_Vector.png)
 ## Memory Geometry
-![Alt Text](./Schemetics/ISA.png)
+![Alt Text](./Schemetics/ISA_T.png)
 
 ## Addition Operation
 <!-- Describe the implementation of the addition operation based on the Neural Cache. -->
