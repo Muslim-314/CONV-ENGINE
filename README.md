@@ -13,10 +13,10 @@
 ## Introduction
 <!-- Provide an overview of the project, goals, and the underlying architecture. -->
 
-## Standard Cell
+## Memory Array
 <!-- Describe the standard cell design used in this project. -->
 
-## Memory Array
+## Memory Vector
 <!-- Explain the structure and functionality of the memory array. -->
 
 ## Memory Geometry
