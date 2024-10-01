@@ -1,0 +1,53 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'GWL'
+Slack : -3.012
+TNS   : -22.203
+
+Type  : Slow 1100mV 85C Model Hold 'GWL'
+Slack : 0.918
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'GWL'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'GWL'
+Slack : -3.006
+TNS   : -22.322
+
+Type  : Slow 1100mV 0C Model Hold 'GWL'
+Slack : 0.834
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'GWL'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'GWL'
+Slack : -0.908
+TNS   : -6.022
+
+Type  : Fast 1100mV 85C Model Hold 'GWL'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'GWL'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'GWL'
+Slack : -0.755
+TNS   : -4.879
+
+Type  : Fast 1100mV 0C Model Hold 'GWL'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'GWL'
+Slack : 0.055
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,15 @@
+
+State Machine - |memory_32_by_256|ADD_FSM:add_fsm_inst|state
+Name state.CHECK state.STORE state.ADD state.IDLE state.WAIT 
+state.IDLE 0 0 0 0 0 
+state.ADD 0 0 1 1 0 
+state.STORE 0 1 0 1 0 
+state.CHECK 1 0 0 1 0 
+state.WAIT 0 0 0 1 1 
+
+State Machine - |memory_32_by_256|ADD_FSM:add_fsm_inst|START_FSM:fsm_inst|state
+Name state.WAIT state.START_STATE state.CLR_STATE state.IDLE 
+state.IDLE 0 0 0 0 
+state.CLR_STATE 0 0 1 1 
+state.START_STATE 0 1 0 1 
+state.WAIT 1 0 0 1 

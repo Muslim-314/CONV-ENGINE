@@ -1,0 +1,123 @@
+# do NeuralCache_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying /home/muslim/HDD/Quartus/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/Memory_array.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/Memory_array.v 
+# -- Compiling module Memory_array
+# 
+# Top level modules:
+# 	Memory_array
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/Memory_vector.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/Memory_vector.v 
+# -- Compiling module Memory_vector
+# 
+# Top level modules:
+# 	Memory_vector
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/decoder_8_to_256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/decoder_8_to_256.v 
+# -- Compiling module decoder_8_to_256
+# 
+# Top level modules:
+# 	decoder_8_to_256
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/memory_32_by_256.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/memory_32_by_256.v 
+# -- Compiling module memory_32_by_256
+# 
+# Top level modules:
+# 	memory_32_by_256
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/full_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/full_adder.v 
+# -- Compiling module full_adder
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/decoder_3to8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/decoder_3to8.v 
+# -- Compiling module decoder_3to8
+# 
+# Top level modules:
+# 	decoder_3to8
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/START_FSM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/START_FSM.v 
+# -- Compiling module START_FSM
+# 
+# Top level modules:
+# 	START_FSM
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/muslim/HDD/NeuralCache {/home/muslim/HDD/NeuralCache/ADD_FSM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:17 on Sep 27,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/muslim/HDD/NeuralCache" /home/muslim/HDD/NeuralCache/ADD_FSM.v 
+# -- Compiling module ADD_FSM
+# 
+# Top level modules:
+# 	ADD_FSM
+# End time: 09:10:17 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vlog -reportprogress 300 -work work /home/muslim/HDD/NeuralCache/Testbench/memory_32_by_256_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:47 on Sep 27,2024
+# vlog -reportprogress 300 -work work /home/muslim/HDD/NeuralCache/Testbench/memory_32_by_256_tb.v 
+# -- Compiling module memory_32_by_256_tb
+# 
+# Top level modules:
+# 	memory_32_by_256_tb
+# End time: 09:10:47 on Sep 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.memory_32_by_256_tb
+# vsim work.memory_32_by_256_tb 
+# Start time: 09:10:53 on Sep 27,2024
+# Loading work.memory_32_by_256_tb
+# Loading work.memory_32_by_256
+# Loading work.decoder_3to8
+# Loading work.ADD_FSM
+# Loading work.START_FSM
+# Loading work.Memory_vector
+# Loading work.decoder_8_to_256
+# Loading work.Memory_array
+# Loading work.full_adder
+# Loading work.adder
+add wave -position insertpoint sim:/memory_32_by_256_tb/*
+run -all
+# ** Note: $finish    : /home/muslim/HDD/NeuralCache/Testbench/memory_32_by_256_tb.v(89)
+#    Time: 875 ps  Iteration: 0  Instance: /memory_32_by_256_tb
+# 1
+# Break in Module memory_32_by_256_tb at /home/muslim/HDD/NeuralCache/Testbench/memory_32_by_256_tb.v line 89

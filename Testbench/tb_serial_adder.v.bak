@@ -1,0 +1,63 @@
+module tb_serial_adder;
+
+    // Inputs
+    reg clk;
+    reg reset;
+    reg [7:0] a, b;  // 8-bit inputs for the two numbers
+    reg cin;         // Initial carry input (for the first bit)
+
+    // Outputs
+    wire s;
+    wire cout;
+
+    // Internal signals
+    reg [7:0] sum;
+    integer i;  // Loop variable
+
+    // Instantiate the Unit Under Test (UUT)
+    serial_adder uut (
+        .clk(clk),
+        .reset(reset),
+        .a(a[0]),    // Bitwise inputs
+        .b(b[0]),    // Bitwise inputs
+        .cin(cin),   // Initial carry input
+        .s(s),
+        .cout(cout)
+    );
+
+    // Clock generation (period = 10 time units)
+    always #5 clk = ~clk;
+
+    initial begin
+        // Initialize inputs
+        clk = 0;
+        reset = 0;
+        a = 8'b00101101;  // 45 in binary
+        b = 8'b01111010;  // 122 in binary
+        cin = 0;          // No carry input initially
+        sum = 0;
+
+        // Monitor output
+        $monitor("Time: %0t | a = %b | b = %b | cin = %b | sum = %b | cout = %b", 
+                 $time, a, b, cin, s, cout);
+
+        // Apply reset
+        reset = 1;
+        #10;
+        reset = 0;
+
+        // Add the two numbers bit by bit on each clock cycle
+        for (i = 0; i < 8; i = i + 1) begin
+            @(posedge clk);
+            a[0] = a[i];  // Feed one bit of 'a'
+            b[0] = b[i];  // Feed one bit of 'b'
+            #1;           // Wait for the sum to stabilize
+            sum[i] = s;   // Store the result in the sum register
+        end
+
+        // Display final sum
+        $display("Sum: %b (Decimal: %d)", sum, sum);
+
+        #10 $finish;  // End simulation
+    end
+endmodule

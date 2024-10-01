@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/muslim/HDD/NeuralCache/simulation/modelsim
+vADD_FSM
+!s110 1727198902
+!i10b 1
+!s100 V^:eAl71jFDQQS1AfA_]N2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IJ85^zeJ^Nd:BLmmQXm??Y3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727195122
+8NeuralCache.vo
+FNeuralCache.vo
+!i122 0
+L0 32 2159
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1727198902.000000
+!s107 NeuralCache.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|NeuralCache.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+tCvgOpt 0
+n@a@d@d_@f@s@m

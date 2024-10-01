@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DataOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DONE",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Col_ADDRS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "READ",
+					"strict" : false
+				},
+				{
+					"name" : "Write",
+					"strict" : false
+				},
+				{
+					"name" : "Row_ADDRS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Row_ADDRS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Row_ADDRS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "En",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[5]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

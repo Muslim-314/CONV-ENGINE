@@ -1,0 +1,60 @@
+module tb_adder_256;
+
+    // Inputs
+    reg [255:0] a;
+    reg [255:0] b;
+    reg C_EN;
+    reg rst;
+
+    // Outputs
+    wire [255:0] sum;
+
+    // Instantiate the Unit Under Test (UUT)
+    adder_256 uut (
+        .a(a), 
+        .b(b), 
+        .C_EN(C_EN), 
+        .rst(rst), 
+        .sum(sum)
+    );
+
+    initial begin
+        // Initialize inputs
+        a = 256'b0;
+        b = 256'b0;
+        C_EN = 0;
+        rst = 1;   // Initially reset
+        
+        // Monitor signals for debugging
+        $monitor("Time: %0t | a = %h | b = %h | C_EN = %b | rst = %b | sum = %h", 
+                 $time, a, b, C_EN, rst, sum);
+
+        // Wait for global reset to finish
+        #10 rst = 0;  // Disable reset after some delay
+
+        // Test case 1: Simple addition without carry
+        a = 256'hFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+        b = 256'h0000000000000000000000000000000000000000000000000000000000000001;
+        C_EN = 0;
+        #20;  // Wait for some time to observe the result
+
+        // Test case 2: Addition with carry enabled
+        C_EN = 1;
+        #20;
+
+        // Test case 3: Larger values for both inputs
+        a = 256'hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;
+        b = 256'h5555555555555555555555555555555555555555555555555555555555555555;
+        C_EN = 0;
+        #20;
+
+        // Test case 4: Reset during operation
+        rst = 1;
+        #10 rst = 0;  // Release reset
+        #20;
+
+        // End of simulation
+        $finish;
+    end
+
+endmodule

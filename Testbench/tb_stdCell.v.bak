@@ -1,0 +1,85 @@
+module tb_stdCell;
+
+  // Inputs
+  reg RWL;
+  reg WWL;
+  reg GWL;
+  reg CLR;
+  reg READ;
+  reg Write;
+  reg FromAdder;
+  reg BL;
+
+  // Outputs
+  wire SA;
+  wire ToAdder;
+
+  // Instantiate the Unit Under Test (UUT)
+  stdCell uut (
+    .RWL(RWL), 
+    .WWL(WWL), 
+    .GWL(GWL), 
+    .CLR(CLR),
+    .READ(READ), 
+    .Write(Write), 
+    .FromAdder(FromAdder), 
+    .BL(BL), 
+    .SA(SA), 
+    .ToAdder(ToAdder)
+  );
+
+  initial begin
+    // Initialize Inputs
+    RWL = 0;
+    WWL = 0;
+    GWL = 0;
+    CLR = 0;
+    READ = 0;
+    Write = 0;
+    FromAdder = 0;
+    BL = 0;
+
+    // Wait for global reset
+    #10;
+
+    // Test Case 1: Write from Adder
+    WWL = 1; 
+    FromAdder = 1; 
+    #10;
+    WWL = 0;
+    #10;
+
+    // Test Case 2: Write from Bitline
+    GWL = 1; 
+    Write = 1; 
+    BL = 1; 
+    #10;
+    Write = 0;
+    GWL = 0;
+    #10;
+
+    // Test Case 3: Read to ToAdder
+    RWL = 1; 
+    #10;
+    RWL = 0;
+    #10;
+
+    // Test Case 4: Read to Sense Amplifier
+    GWL = 1; 
+    READ = 1; 
+    #10;
+    READ = 0;
+    GWL = 0;
+    #10;
+
+    // Test Case 5: Clear signal (assuming CLR has some effect, though it's not defined in your module)
+    CLR = 1;
+    #10;
+    CLR = 0;
+    #10;
+
+    // End simulation
+    $finish;
+  end
+
+endmodule
