@@ -2,8 +2,8 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Standard Cell](#standard-cell)
 - [Memory Array](#memory-array)
+- [Memory Vector](#memory-vector)
 - [Memory Geometry](#memory-geometry)
 - [Addition Operation](#addition-operation)
 - [Multiplication Operation](#multiplication-operation)
