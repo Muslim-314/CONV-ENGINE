@@ -11,8 +11,7 @@
 - [User Guide](#user-guide)
 
 ## Introduction
-<!-- Provide an overview of the project, goals, and the underlying architecture. -->
-
+The repository contain the RTL design for the an In-memory computing unit that is capable of performing parallel addition and multiplication. Current design can load two vectors and is able to perform the arithemetic operations between them. This will accelerate the DSP opeations such as Convolution and reduction/accumulation, Dot product, Matrix Multiplication, min/max pooling which are the esential part of DNNs and CNNs
 ## Memory Array
 <!-- Describe the standard cell design used in this project. -->
 
