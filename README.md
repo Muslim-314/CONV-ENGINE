@@ -23,7 +23,7 @@ A vector storage element can be formed using instantiating the Memory Array `n` 
 
 ## Addition Operation
 ![Alt Text](./Schemetics/Wave_ADD.png)
-![Alt Text](./Schemetics/vec_add.png)
+![Alt Text](./Results/vec_add.png)
 ## Multiplication Operation
 
 ## File Description
