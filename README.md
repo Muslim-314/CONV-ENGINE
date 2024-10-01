@@ -20,8 +20,7 @@ The repository contains the RTL design for an advanced in-memory computing unit 
 ![Alt Text](./Schemetics/ISA_T.png)
 
 ## Addition Operation
-<!-- Describe the implementation of the addition operation based on the Neural Cache. -->
-
+![Alt Text](./Schemetics/Wave_ADD.png)
 ## Multiplication Operation
 <!-- Provide details on how the multiplication operation is carried out using the Neural Cache approach. -->
 
