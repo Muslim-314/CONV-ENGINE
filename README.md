@@ -16,7 +16,7 @@ The repository contains the RTL design for an advanced in-memory computing unit 
 Single block of memory is able to store the 8-bits of data. Simple read and write operation can be performed using the `DataIn` and `DataOut` ports and `Rd/W` signals. In case of arithemetic operation a single bit has to be transmitted to adder via the `ToAdder`. The bit which is to be transmitted to the Adder is decided based on the `RWL[7:0]` signal. if `RWL[0] = HIGH` that means the value stored a the bit `0` is the memory block should appear on the `ToAdder`. Vice Versa from storing the value using the `FromAdder` and `WWL[7:0]` singals
 ![Alt Text](./Schemetics/Memory_Array.png)
 ## Memory Vector
-A vector storage element can be formed using instantiating the Memory Array `n` times. Where `n` is the number of elements in the vector. vector size is fixed. A column decoder is used to read or write the data in an individual memory arrays.
+A vector storage element can be formed using instantiating the Memory Array `n` times. Where `n` is the number of elements in the vector. vector size is fixed and for the current design it is 256. This means we can perform parallel arithemetic operation on 256 vector elements. A column decoder is used to read or write the data in an individual memory arrays.
 ![Alt Text](./Schemetics/Memory_Vector.png)
 ## Memory Geometry
 ![Alt Text](./Schemetics/ISA_T.png)
